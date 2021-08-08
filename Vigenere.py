@@ -75,12 +75,16 @@ if __name__ == "__main__":
                 # check if the key consists only of letters !
                 while True:
                     key0 = input('Please insert the key : ')
-                    if key0.isalpha():
-                        key = key0.lower()
-                        for i in range(len(key)):
-                            key1 = key[i]
-                            num_key.append(ord(key1) - 96)
-                        break
+                    if len(key0) <= len(plaintext):
+                        if key0.isalpha():
+                            key = key0.lower()
+                            for i in range(len(key)):
+                                key1 = key[i]
+                                num_key.append(ord(key1) - 97)
+                                print(f'{ord(key1) - 97}')
+                            break
+                    else:
+                        print('The length of the key must be lower or equal to the plainext ! \n')
                 # output of encryption
                 print('\n')
                 print(50 * '*')
