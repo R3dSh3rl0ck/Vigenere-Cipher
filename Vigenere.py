@@ -98,7 +98,7 @@ if __name__ == "__main__":
                         key = key0.lower()
                         for i in range(len(key)):
                             key1 = key[i]
-                            num_key.append(ord(key1) - 96)
+                            num_key.append(ord(key1) - 97)
                         break
                 # output of Decryption
                 print('\n')
