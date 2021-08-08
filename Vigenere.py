@@ -81,7 +81,6 @@ if __name__ == "__main__":
                             for i in range(len(key)):
                                 key1 = key[i]
                                 num_key.append(ord(key1) - 97)
-                                print(f'{ord(key1) - 97}')
                             break
                     else:
                         print('The length of the key must be lower or equal to the plainext ! \n')
